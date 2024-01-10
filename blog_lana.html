@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web html5 y css, fase 2">
+    <meta name="keywords" content="html, css, codigo, fase 2, web personal, diseño">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo" >
+        <nav>
+            <ul>
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="artistas.html"> ARTISTAS</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="boletos.html">BOLETOS</a></li>
+              <li><a href="pago.html">PAGO</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu">
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><img src="img/angulo-derecho.png" alt="algulo"></li>
+        <li><a href="#">Lana del Rey</a></li>
+      </ul>
+    </div>
+   
+
+    <div class="image-slideshow">
+        <div class="image fade">
+        <img src="img/lana1.png" alt="Mountain Top">
+        </div>        
+        <div class="image fade">
+        <img src="img/lana2.png" alt="Palm Trees">
+        </div>        
+        <div class="image fade">
+        <img src="img/lana3.png" alt="Neon Sign">
+        </div>
+      </div>
+
+      <section id="nota">
+        <h2>Sofia Coppola revela que Lana Del Rey estuvo a punto de aparecer en la banda sonora de 'Priscilla'</h2>
+        <h3>Durante una entrevista, la directora de cine Sofia Coppola revela que Lana Del Rey estuvo a punto de 
+          aparecer en la banda sonora de su nueva película, 'Priscilla'</h3>
+          <div class="container">
+            <div class="video">        
+              <p >En una entrevista reciente con E! News, Coppola mencionó que tenía la esperanza de que Lana Del Rey contribuyera con una canción a la banda sonora de la película, pero lamentablemente, debido a problemas de tiempo, 
+              esto no fue posible. La directora dijo: "Esperábamos que pudiera hacer una canción para ella, pero no funcionó con el tiempo".</p>
+              <p>Coppola explicó que mientras filmaba Priscilla, se dio cuenta de la fuerte conexión que los fanáticos habían establecido entre Lana Del Rey y la leyenda del rock 'n' roll Elvis Presley y su esposa Priscilla. La cineasta comentó: "Estoy aprendiendo que la gente realmente conecta a Lana Del Rey y Priscilla, y no me di cuenta de eso, pero recibí muchas solicitudes con, '¿Cómo va a ser parte de la película?'".</p>
+
+              <p>Lana Del Rey, conocida por ser una ferviente admiradora de Elvis y Priscilla Presley, ha hecho referencias a la pareja icónica en su música y en su imagen. La cantante, cuya apariencia a menudo rinde homenaje a la estética de los años 60, 
+                ha interpretado a Priscilla Presley a lo largo de su carrera, adoptando su distintivo cabello largo y delineador de ojos exagerado.</p>
+                <p>Además de su apariencia, Lana Del Rey ha incluido referencias a Elvis Presley en sus letras, como la famosa línea Elvis is my daddy en su canción Body Electric. Incluso lanzó un demo titulado Elvis en 2008, que apareció en el documental de Elvis de Eugene Jarecki, The King, estrenado en 2017.</p>
+            </div>
+    <div class="right_column">
+  <img src="img/priscilla.webp" alt="poster pelicula" width="60%">
+    </div>
+          </div>
+          
+      </section>
+
+    <footer>
+        <section id="footer">
+                <div class="redes">
+                  <a href="https://www.instagram.com/maria.ylucidez/" target="_blank"><img src="img/instagram.png" alt="instagram" width="50px"></a>
+                </div>
+        </section>
+
+        <p>&copy; Ilse Cruz. 2023 MEMORA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        let index = 0;
+displayImages();
+function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("image");
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+    index = 1;
+  }
+  images[index-1].style.display = "block";
+  setTimeout(displayImages, 2000); 
+}
+    </script>
+</body>
+</html>

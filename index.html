@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web html5 y css, fase 2">
+    <meta name="keywords" content="html, css, codigo, fase 2, web personal, diseño">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo" >
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="artistas.html"> ARTISTAS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="boletos.html">BOLETOS</a></li>
+                <li><a href="pago.html">PAGO</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="parallax">
+        <div class="banner-text">
+            <h1>Memora fest</h1>
+            <h3>Esperalo pronto - Junio 2024</h3>
+        </div>
+    </section>
+
+    <section id="proximos_eventos">
+        <h2>Proximos eventos</h2>
+        <div class="proximos">
+            
+
+        <div class="evento">
+            <img src="img/pal norte.png" alt="artista 1">
+            <h3>Tecate Pa’l Norte 2024</h3>
+            <p>La decimosegunda edición del Tecate Pa’l Norte 2024 se va a realizar en el Parque Fundidora de la Ciudad de Monterrey, Nuevo León.</p>
+        </div>
+
+        <div class="evento">
+            <img src="img/policia.webp" alt="artista 1">
+            <h3>El Mató a un Policía Motorizado</h3>
+            <p>El Mató a un Policía Motorizado, probablemente la banda argentina más influyente a nivel internacional desde el 2003, y una de las más representativas de la nueva ola de grupos independientes alternativos.</p>
+        </div>
+
+        <div class="evento">
+            <img src="img/daniel.png" alt="artista 1">
+            <h3>Daniel, Me Estás Matando</h3>
+            <p>Daniel, Me Estás Matando con tu camino dedicado al amor, el desamor y tu definición del boleroglam. "Que se siente que me gustes tanto?", "Lo Hice, Te Dejé", "Es Verdad" y "Sólo Tu" son solo el comienzo de la magia de cromatismos románticos y psicodelia que se vivirá en Showcenter Complex.</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <div class="video">
+                <h2>Video destacado</h2>
+                <iframe src="https://player.vimeo.com/video/871191023?h=cdf9ffcf96&byline=0&portrait=0" 
+                width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen></iframe> 
+            </div>       
+            <div class="right_column">
+                    <p>Uno de los festivales más relevantes en nuestro país tuvo una nueva edición este 2023, siendo esta la más grande, pues se estima que el festival recibió más de 240 mil asistentes a lo largo de 3 días llenos de música, “cheve” fría, amigos y diversión. </p>
+                    <p>En comparativa a sus ediciones previas, las mejoras en cuanto a logística fueron notables, pues la adecuada disposición de sus nueve escenarios a lo largo de gran parte del Parque Fundidora permitió la movilidad y fácil acceso del público, aunado a la buena ubicación de baños y barras, al igual que la instalación de pasto artificial, lo que ayudo a evitar el lodo y el levantamiento de polvo. </p>
+            </div>
+        </div>
+       
+    </section>
+
+    <div class="parallax bottom">
+
+    <section id="contact">
+                <h2>Contacto</h2>
+                <form id="contact-form" action="contact.php">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <button id="pago" type="submit">Enviar mensaje</button>
+                </form>
+    </section>
+
+</div>
+    <footer>
+        <section id="footer">
+                <div class="redes">
+                    <a href="https://www.instagram.com/maria.ylucidez/" target="_blank"><img src="img/instagram.png" alt="instagram" width="50px"></a>
+                </div>
+        </section>
+
+        <p>&copy; Ilse Cruz. 2023 MEMORA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

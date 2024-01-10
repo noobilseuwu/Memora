@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web html5 y css, fase 2">
+    <meta name="keywords" content="html, css, codigo, fase 2, web personal, diseño">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo" >
+        <nav>
+            <ul>
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="artistas.html"> ARTISTAS</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="boletos.html">BOLETOS</a></li>
+              <li><a href="pago.html">PAGO</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu">
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><img src="img/angulo-derecho.png" alt="algulo"></li>
+        <li><a href="#">El Mató a un Policía Motorizado</a></li>
+      </ul>
+    </div>
+   
+
+    <div class="image-slideshow">
+        <div class="image fade">
+        <img src="img/policia1.png" alt="Mountain Top">
+        </div>        
+        <div class="image fade">
+        <img src="img/policia2.png" alt="Palm Trees">
+        </div>        
+      </div>
+
+      <section id="nota">
+        <h2>El Mató a un Policía Motorizado: "Súper terror fue el proceso más anárquico"</h2>
+        <h3>Hablamos con Santiago Motorizado sobre cómo el caos, la oscuridad y la música radial que escuchaban en su adolescencia influenció el cuarto disco de la emblemática banda platense.</h3>
+
+          <div class="container">
+            <div class="video">
+              <p>En Súper terror, El Mató a un Policía Motorizado se aventura hacia horizontes sinuosos que expanden su lenguaje musical. Su esperado cuarto álbum refleja la conexión del pasado con el presente, mientras busca hacerse paso hacia un futuro inexplorado. Al transitar entre la luz y la oscuridad, un mundo de incertidumbre y cambios, la banda platense aborda temáticas ligadas al paso del tiempo, el destino y la búsqueda de nuevos comienzos. En ese camino, se encuentran con un universo desolado, pero también con un atisbo de esperanza.</p>
+              <p>Cada canción de Súper terror oculta un secreto, una obsesión y un cuidadoso sonido que agrega una complejidad distintiva al sucesor de La síntesis O’Konor (2017). Con guitarras espaciales, sintetizadores envolventes y baterías electrónicas, el álbum despliega atmósferas densas y melodías épicas que abrazan con devoción lo desconocido. Entre auroras artificiales, laten emociones imperiosas e intrincadas, revelando la dualidad del alma y la belleza sutil inherente a la lobotomía sónica de sus entrañas.</p>
+              <p>Desde el comienzo de su carrera hace 20 años, cada nuevo disco de El Mató ha resignificado sus antecesores. Sus álbumes se convierten en nuevos puntos cardinales de una brújula musical que guía el viaje sonoro de la banda. Súper terror emerge como un nuevo faro, desentrañando perspectivas y conexiones que demuestran lo enriquecedor y novedoso del largo camino recorrido. El destino final para la banda, es la consagración de su deseo ardiente de trascender barreras y elevar su arte hacia el infinito.</p>
+            </div>
+    <div class="right_column">
+  <img src="img/policia_album.jpeg" alt="policia_album" width="50%">
+  <p>“La idea fue armar un relato con todas las formas de los álbumes con los que crecimos y con los que hemos hecho”, explica Santiago Motorizado en conversación con Indie Hoy, mientras la banda se prepara para dos presentaciones en el Luna Park. Y es que los discos de El Mató tejen su propio imaginario. En esta oportunidad, la banda crea una ensoñación ciberdistópica, fusionando vestigios de su adolescencia con las fantasmagorías y dolencias de la era post pandemia. Súper terror entrelaza la herencia alternativa con una vuelta de tuerca ultramoderna para el grupo, preservando su esencia en la distorsión de cada verso, nota e imagen que florece en la retención del público, permitiéndole decodificarlo o deformarlo según su propia experiencia.</p>
+    </div>
+          </div>
+          
+      </section>
+
+    <footer>
+        <section id="footer">
+                <div class="redes">
+                  <a href="https://www.instagram.com/maria.ylucidez/" target="_blank"><img src="img/instagram.png" alt="instagram" width="50px"></a>
+                </div>
+        </section>
+
+        <p>&copy; Ilse Cruz. 2023 MEMORA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        let index = 0;
+displayImages();
+function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("image");
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+    index = 1;
+  }
+  images[index-1].style.display = "block";
+  setTimeout(displayImages, 2000); 
+}
+    </script>
+</body>
+</html>
